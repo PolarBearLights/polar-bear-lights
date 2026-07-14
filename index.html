@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- ============================================================
+     FAVICON (the little tab icon). This is a PLACEHOLDER polar-bear
+     face embedded right in the page so it works with no extra files.
+     Later, swap this for your real logo: export it as favicon.ico +
+     a 512x512 PNG (any free tool like favicon.io does this), drop the
+     files in this folder, and replace the two lines below with:
+       <link rel="icon" href="/favicon.ico" sizes="any">
+       <link rel="icon" type="image/png" href="/favicon-512.png">
+     ============================================================ -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%230d1b3e'/%3E%3Ccircle%20cx='6'%20cy='7'%20r='1.7'%20fill='%23f7c948'/%3E%3Ccircle%20cx='13'%20cy='5'%20r='1.7'%20fill='%23c6415f'/%3E%3Ccircle%20cx='20'%20cy='5'%20r='1.7'%20fill='%232e6b52'/%3E%3Ccircle%20cx='27'%20cy='7'%20r='1.7'%20fill='%237fb5d9'/%3E%3Ccircle%20cx='9.5'%20cy='13'%20r='3.2'%20fill='%23fdfdff'/%3E%3Ccircle%20cx='22.5'%20cy='13'%20r='3.2'%20fill='%23fdfdff'/%3E%3Ccircle%20cx='9.5'%20cy='13'%20r='1.6'%20fill='%23dce7ea'/%3E%3Ccircle%20cx='22.5'%20cy='13'%20r='1.6'%20fill='%23dce7ea'/%3E%3Ccircle%20cx='16'%20cy='19'%20r='8'%20fill='%23fdfdff'/%3E%3Ccircle%20cx='16'%20cy='21.5'%20r='4.3'%20fill='%23dce7ea'/%3E%3Ccircle%20cx='12.5'%20cy='16.5'%20r='1.15'%20fill='%230d1b3e'/%3E%3Ccircle%20cx='19.5'%20cy='16.5'%20r='1.15'%20fill='%230d1b3e'/%3E%3Cpath%20d='M14%2019.4%20Q16%2019%2018%2019.4%20Q17%2021.1%2016%2021.9%20Q15%2021.1%2014%2019.4%20Z'%20fill='%230d1b3e'/%3E%3Cpath%20d='M14.8%2022.2%20Q16%2023.3%2017.2%2022.2'%20stroke='%230d1b3e'%20stroke-width='0.8'%20fill='none'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%230d1b3e'/%3E%3Ccircle%20cx='6'%20cy='7'%20r='1.7'%20fill='%23f7c948'/%3E%3Ccircle%20cx='13'%20cy='5'%20r='1.7'%20fill='%23c6415f'/%3E%3Ccircle%20cx='20'%20cy='5'%20r='1.7'%20fill='%232e6b52'/%3E%3Ccircle%20cx='27'%20cy='7'%20r='1.7'%20fill='%237fb5d9'/%3E%3Ccircle%20cx='9.5'%20cy='13'%20r='3.2'%20fill='%23fdfdff'/%3E%3Ccircle%20cx='22.5'%20cy='13'%20r='3.2'%20fill='%23fdfdff'/%3E%3Ccircle%20cx='9.5'%20cy='13'%20r='1.6'%20fill='%23dce7ea'/%3E%3Ccircle%20cx='22.5'%20cy='13'%20r='1.6'%20fill='%23dce7ea'/%3E%3Ccircle%20cx='16'%20cy='19'%20r='8'%20fill='%23fdfdff'/%3E%3Ccircle%20cx='16'%20cy='21.5'%20r='4.3'%20fill='%23dce7ea'/%3E%3Ccircle%20cx='12.5'%20cy='16.5'%20r='1.15'%20fill='%230d1b3e'/%3E%3Ccircle%20cx='19.5'%20cy='16.5'%20r='1.15'%20fill='%230d1b3e'/%3E%3Cpath%20d='M14%2019.4%20Q16%2019%2018%2019.4%20Q17%2021.1%2016%2021.9%20Q15%2021.1%2014%2019.4%20Z'%20fill='%230d1b3e'/%3E%3Cpath%20d='M14.8%2022.2%20Q16%2023.3%2017.2%2022.2'%20stroke='%230d1b3e'%20stroke-width='0.8'%20fill='none'/%3E%3C/svg%3E">
+
+<!-- ============================================================
+     SEO: Title + meta description
+     Rule of thumb: put your #1 keyword phrase + top city near the
+     front of the title. Keep title < ~60 chars, description < ~155.
+     ============================================================ -->
+<title>Christmas Light Installation in Johnson &amp; Tarrant County, TX | Polar Bear Lights</title>
+<meta name="description" content="Professional Christmas light installation, take-down & off-season storage in Burleson, Johnson, Tarrant & Parker counties. Free quotes. We hang, remove, and store your lights so you never lift a ladder." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.polarbearlights.com/" />
+
+<!-- Social share preview (placeholder image) -->
+<meta property="og:title" content="Polar Bear Lights | DFW Christmas Light Installation" />
+<meta property="og:description" content="We design, hang, take down, and STORE your Christmas lights. Serving Burleson, Johnson, Tarrant & Parker counties." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://www.polarbearlights.com/placeholder-social.jpg" />
+
+<!-- Whimsical + clean font pairing. Falls back to system fonts if offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     LOCAL SEO: Structured data (JSON-LD).
+     This is what tells Google "we're a local business serving
+     these cities." Fill in real NAP (Name/Address/Phone) later —
+     it must match your Google Business Profile EXACTLY.
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Polar Bear Lights",
+  "image": "https://www.polarbearlights.com/placeholder-logo.png",
+  "telephone": "+1-817-256-1666",
+  "email": "hello@polarbearlights.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Burleson",
+    "addressRegion": "TX",
+    "postalCode": "76028",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Johnson County, TX" },
+    { "@type": "AdministrativeArea", "name": "Tarrant County, TX" },
+    { "@type": "AdministrativeArea", "name": "Parker County, TX" },
+    { "@type": "City", "name": "Burleson, TX" }
+  ],
+  "description": "Professional Christmas light design, installation, take-down and off-season storage serving Burleson, Johnson, Tarrant and Parker counties in the DFW area.",
+  "openingHours": "Mo-Sa 08:00-18:00",
+  "sameAs": [
+    "https://www.facebook.com/PLACEHOLDER",
+    "https://www.instagram.com/PLACEHOLDER"
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --midnight:#0d1b3e;      /* night sky */
+    --midnight-2:#14245a;
+    --gold:#f7c948;          /* warm light glow */
+    --gold-soft:#ffe08a;
+    --snow:#fdfdff;
+    --blush:#f7d9e3;         /* cutesy blush */
+    --berry:#c6415f;         /* warm red accent */
+    --evergreen:#2e6b52;
+    --ink:#26314d;
+    --shadow:0 10px 30px rgba(13,27,62,.12);
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:"Nunito",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--ink);
+    background:var(--snow);
+    line-height:1.55;
+  }
+  h1,h2,h3{line-height:1.15;margin:0 0 .4em}
+  .script{font-family:"Mountains of Christmas","Nunito",cursive;font-weight:700}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  .btn{
+    display:inline-block;background:var(--berry);color:#fff;font-weight:800;
+    padding:14px 26px;border-radius:999px;text-decoration:none;border:none;
+    cursor:pointer;font-size:1rem;box-shadow:var(--shadow);transition:transform .15s ease;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{background:var(--gold);color:var(--midnight)}
+  .pill{display:inline-block;background:var(--blush);color:var(--berry);
+    font-weight:800;padding:6px 14px;border-radius:999px;font-size:.8rem;letter-spacing:.02em}
+
+  /* Placeholder photo blocks so you can SEE where real images go */
+  .ph{
+    background:
+      repeating-linear-gradient(45deg,#e9edf7,#e9edf7 12px,#e0e6f4 12px,#e0e6f4 24px);
+    border:2px dashed #9fb0d8;border-radius:var(--radius);
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    color:#5a6a94;font-weight:800;min-height:220px;padding:16px;
+  }
+
+  /* ---------- Header ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(253,253,255,.92);
+    backdrop-filter:blur(8px);border-bottom:1px solid #eef1f8}
+  .bar{display:flex;align-items:center;gap:16px;padding:10px 0}
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .logo b{font-size:1.05rem;color:var(--midnight)}
+  .logo small{display:block;color:var(--berry);font-weight:800;font-size:.72rem;letter-spacing:.04em}
+  .nav{margin-left:auto;display:flex;align-items:center;gap:20px}
+  .nav a{text-decoration:none;font-weight:700;font-size:.95rem}
+  .nav .call{background:var(--evergreen);color:#fff;padding:10px 16px;border-radius:999px}
+  @media(max-width:760px){.nav a.link{display:none}}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;overflow:hidden;color:#fff;
+    background:radial-gradient(1200px 500px at 70% -10%, #24357a 0%, var(--midnight) 55%)}
+  .hero:before{content:"";position:absolute;inset:0;
+    background-image:
+      radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+      radial-gradient(2px 2px at 80% 20%, var(--gold-soft), transparent),
+      radial-gradient(1.5px 1.5px at 50% 60%, #fff, transparent),
+      radial-gradient(2px 2px at 35% 80%, var(--gold), transparent),
+      radial-gradient(1.5px 1.5px at 65% 75%, #fff, transparent);
+    opacity:.7}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;
+    align-items:center;padding:64px 0}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;padding:40px 0}}
+  .hero h1{font-size:clamp(2rem,5vw,3.2rem)}
+  .hero h1 .script{color:var(--gold-soft);display:block;font-size:1.25em}
+  .hero p.lede{font-size:1.15rem;color:#dbe3ff;max-width:46ch}
+  .trust{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:18px;
+    font-weight:700;font-size:.9rem;color:#cdd7ff}
+  .trust span{display:flex;align-items:center;gap:6px}
+
+  /* ---------- Lead form ---------- */
+  .lead{background:#fff;color:var(--ink);border-radius:24px;padding:24px;
+    box-shadow:0 20px 50px rgba(0,0,0,.35)}
+  .lead h2{font-size:1.35rem}
+  .lead .sub{color:#6b7796;font-size:.92rem;margin-top:-4px}
+  .field{margin-top:12px}
+  .field label{display:block;font-weight:700;font-size:.82rem;margin-bottom:4px}
+  .field input,.field select{width:100%;padding:12px 14px;border:1.5px solid #dfe4f1;
+    border-radius:12px;font-size:1rem;font-family:inherit}
+  .field input:focus,.field select:focus{outline:none;border-color:var(--berry)}
+  .lead .btn{width:100%;margin-top:16px}
+  .lead .fine{font-size:.75rem;color:#8a94ad;margin-top:10px;text-align:center}
+  .speed{display:inline-flex;align-items:center;gap:6px;background:var(--blush);
+    color:var(--berry);font-weight:800;font-size:.78rem;padding:4px 10px;border-radius:999px}
+  /* Honeypot: visually hidden anti-spam field (real users never see it) */
+  .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+  /* ---------- Sections ---------- */
+  section{padding:64px 0}
+  .center{text-align:center;max-width:640px;margin:0 auto 40px}
+  .center .pill{margin-bottom:10px}
+  .center h2{font-size:clamp(1.7rem,3.5vw,2.4rem);color:var(--midnight)}
+
+  .story{background:linear-gradient(180deg,#fff,#fbf4f7)}
+  .story-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
+  @media(max-width:800px){.story-grid{grid-template-columns:1fr}}
+  .story blockquote{font-size:1.15rem;color:var(--ink);margin:0;position:relative}
+  .story .sign{font-family:"Mountains of Christmas",cursive;font-size:1.6rem;color:var(--berry);margin-top:10px}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:820px){.cards{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid #eef1f8;border-radius:var(--radius);
+    padding:24px;box-shadow:var(--shadow)}
+  .card .ico{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;
+    justify-content:center;font-size:1.6rem;background:var(--blush);margin-bottom:12px}
+  .card.star{border:2px solid var(--gold);position:relative}
+  .card.star:after{content:"⭐ Most popular";position:absolute;top:-12px;right:16px;
+    background:var(--gold);color:var(--midnight);font-weight:800;font-size:.72rem;
+    padding:4px 10px;border-radius:999px}
+  .card h3{color:var(--midnight);margin-bottom:2px}
+  .pkg-tag{margin:0 0 10px;font-weight:800;font-size:.82rem;color:var(--berry);
+    text-transform:uppercase;letter-spacing:.03em}
+  .incl{margin-top:14px;padding-top:12px;border-top:1px dashed #e3e8f4;
+    font-weight:700;font-size:.85rem;color:var(--evergreen)}
+
+  .included{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:760px;margin:0 auto}
+  @media(max-width:620px){.included{grid-template-columns:1fr}}
+  .inc{display:flex;align-items:flex-start;gap:12px;background:#fff;border:1px solid #eef1f8;
+    border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+  .inc .ck{flex:none;width:24px;height:24px;border-radius:50%;background:var(--evergreen);
+    color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.8rem;margin-top:1px}
+  .inc .txt{display:flex;flex-direction:column;line-height:1.3}
+  .inc .txt b{color:var(--midnight);font-size:1rem}
+  .inc .txt small{font-size:.85rem;color:#7a86a3;margin-top:2px}
+
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:820px){.gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.gallery{grid-template-columns:1fr}}
+  .gallery .ph{min-height:190px;font-size:.85rem}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+  @media(max-width:820px){.steps{grid-template-columns:1fr}}
+  .step{background:#fff;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);position:relative}
+  .step:before{counter-increment:s;content:counter(s);position:absolute;top:-16px;left:20px;
+    width:40px;height:40px;border-radius:50%;background:var(--berry);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem}
+
+  .areas{background:var(--midnight);color:#fff}
+  .areas .center h2{color:#fff}
+  .area-list{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .area-list span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
+    padding:10px 18px;border-radius:999px;font-weight:700}
+  .area-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:840px;margin:0 auto}
+  @media(max-width:700px){.area-cols{grid-template-columns:1fr}}
+  .area-col{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
+    border-radius:14px;padding:18px 20px}
+  .area-col h3{color:#fff;margin:0 0 6px;font-size:1.15rem}
+  .area-col p{color:#cdd7ff;margin:0;font-size:.95rem}
+
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:820px){.reviews{grid-template-columns:1fr}}
+  .review{background:#fff;border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+  .stars{color:var(--gold);font-size:1.1rem}
+  .review .who{display:flex;align-items:center;gap:10px;margin-top:14px}
+  .avatar{width:40px;height:40px;border-radius:50%;background:var(--blush);
+    display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--berry)}
+
+  .faq details{background:#fff;border:1px solid #eef1f8;border-radius:14px;
+    padding:16px 20px;margin-bottom:12px;box-shadow:var(--shadow)}
+  .faq summary{font-weight:800;cursor:pointer;color:var(--midnight);font-size:1.05rem}
+  .faq p{margin:10px 0 0;color:#4a556f}
+
+  .finalcta{background:radial-gradient(900px 400px at 50% -20%, #24357a, var(--midnight));
+    color:#fff;text-align:center}
+  .finalcta h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem)}
+  .finalcta .big-call{font-family:"Mountains of Christmas",cursive;font-size:2.4rem;color:var(--gold-soft);text-decoration:none}
+
+  footer{background:#08122b;color:#aeb9d8;padding:40px 0;font-size:.92rem}
+  .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:24px}
+  @media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
+  footer a{color:#cfd8f3;text-decoration:none}
+  footer h4{color:#fff;margin:0 0 10px}
+</style>
+</head>
+<body>
+
+<!-- ======================= HEADER ======================= -->
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Polar Bear Lights home">
+      <!-- Logo: white smiling bear framed by a ring of Christmas lights (inline SVG placeholder) -->
+      <svg width="46" height="46" viewBox="0 0 64 64" role="img" aria-label="Polar Bear Lights logo: a white bear framed by a single ring of Christmas lights">
+        <!-- single light-string ring (no outer border) -->
+        <circle cx="32" cy="32" r="26" fill="none" stroke="#2e6b52" stroke-width="1.6"/>
+        <!-- hanging bulbs around the ring -->
+        <circle cx="57" cy="32" r="2.5" fill="#f7c948"/>
+        <circle cx="53.65" cy="44.5" r="2.5" fill="#c6415f"/>
+        <circle cx="44.5" cy="53.65" r="2.5" fill="#2e6b52"/>
+        <circle cx="32" cy="57" r="2.5" fill="#7fb5d9"/>
+        <circle cx="19.5" cy="53.65" r="2.5" fill="#f7c948"/>
+        <circle cx="10.35" cy="44.5" r="2.5" fill="#c6415f"/>
+        <circle cx="7" cy="32" r="2.5" fill="#2e6b52"/>
+        <circle cx="10.35" cy="19.5" r="2.5" fill="#7fb5d9"/>
+        <circle cx="19.5" cy="10.35" r="2.5" fill="#f7c948"/>
+        <circle cx="32" cy="7" r="2.5" fill="#c6415f"/>
+        <circle cx="44.5" cy="10.35" r="2.5" fill="#2e6b52"/>
+        <circle cx="53.65" cy="19.5" r="2.5" fill="#7fb5d9"/>
+        <!-- polar bear -->
+        <circle cx="21" cy="24" r="6.5" fill="#fdfdff" stroke="#c6d3db" stroke-width="1.2"/>
+        <circle cx="43" cy="24" r="6.5" fill="#fdfdff" stroke="#c6d3db" stroke-width="1.2"/>
+        <circle cx="21" cy="24.5" r="3.4" fill="#dce7ea"/>
+        <circle cx="43" cy="24.5" r="3.4" fill="#dce7ea"/>
+        <circle cx="32" cy="35" r="14" fill="#fdfdff" stroke="#c6d3db" stroke-width="1.2"/>
+        <circle cx="32" cy="40" r="7.5" fill="#dce7ea"/>
+        <circle cx="26" cy="30" r="2.3" fill="#0d1b3e"/>
+        <circle cx="38" cy="30" r="2.3" fill="#0d1b3e"/>
+        <path d="M28.5 37 Q32 36.3 35.5 37 Q33.7 40.3 32 41.6 Q30.3 40.3 28.5 37 Z" fill="#0d1b3e"/>
+        <path d="M32 41.6 V43" stroke="#0d1b3e" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+        <path d="M29 43.3 Q32 45.4 35 43.3" stroke="#0d1b3e" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span><b>Polar Bear</b><small>LIGHTS</small></span>
+    </a>
+    <nav class="nav">
+      <a class="link" href="#services">Packages</a>
+      <a class="link" href="#areas">Service Area</a>
+      <a class="link" href="#story">Our Story</a>
+      <a class="call" href="tel:+18172561666">📞 (817) 256-1666</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ======================= HERO + LEAD FORM ======================= -->
+<a id="top"></a>
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill">✨ Serving Johnson, Tarrant &amp; Parker Counties</span>
+      <h1>The magic of Christmas,<span class="script">without the ladder.</span></h1>
+      <p class="lede">We design, hang, take down, <b>and store</b> your Christmas lights, so all you have to do is sip cocoa and watch your home twinkle. 🐻❄️</p>
+      <div class="trust">
+        <span>✅ Fully insured &amp; professional</span>
+        <span>✅ Commercial-grade LED lights included</span>
+        <span>✅ Takedown &amp; free storage included</span>
+        <span>✅ No hidden fees</span>
+      </div>
+    </div>
+
+    <!-- LEAD-TO-SPEED FORM: short, phone-first, one screen -->
+    <form class="lead" id="quoteForm" onsubmit="return submitLead(event)">
+      <span class="speed">⚡ A real person will reach out</span>
+      <h2>Get your free lighting quote</h2>
+      <p class="sub">Takes 30 seconds. No ladders required. 🎄</p>
+      <div class="field">
+        <label for="name">First name</label>
+        <input id="name" name="name" required placeholder="Jane" autocomplete="given-name">
+      </div>
+      <div class="field">
+        <label for="phone">Phone (the best way to reach you)</label>
+        <input id="phone" name="phone" type="tel" required placeholder="(817) 555-0000" autocomplete="tel">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="jane@email.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="county">Your county</label>
+        <select id="county" name="county" required>
+          <option value="">Choose one…</option>
+          <option>Johnson County (Burleson)</option>
+          <option>Tarrant County</option>
+          <option>Parker County</option>
+          <option>Somewhere else in DFW</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="service">Which package are you eyeing?</label>
+        <select id="service" name="service">
+          <option>Not sure yet, help me pick! 🎄</option>
+          <option>🍪 The Sugar Cookie (starter)</option>
+          <option>🦌 The Rudolph (most popular)</option>
+          <option>✨ The Griswold (deluxe)</option>
+        </select>
+      </div>
+      <!-- Honeypot: hidden anti-spam trap. Humans leave it blank; bots fill it. -->
+      <div class="hp" aria-hidden="true">
+        <label for="company">Company (leave this blank)</label>
+        <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <button class="btn" type="submit">🎁 Get My Free Quote</button>
+      <p class="fine">By submitting you agree to be contacted about your quote. No spam, ever.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ======================= HEARTFELT STORY ======================= -->
+<section class="story" id="story">
+  <div class="wrap" style="max-width:760px">
+    <div>
+      <span class="pill">Our Story</span>
+      <h2 class="script" style="font-size:2.2rem;color:var(--berry)">Why we do this</h2>
+      <blockquote>
+        “Ever since I was a little girl, nothing has felt more like <em>home</em> than a street glowing with Christmas lights. When my own family got too busy to decorate the way I dreamed of, I realized so many other moms felt the same, they wanted the magic, just not the ladder, the tangled cords, or the January take-down. So we started Polar Bear Lights to hand that magic back to families like yours. We hang it, we take it down, and we even keep your lights cozy in storage till next year. All you have to do is watch your kids' faces light up.”
+        <div class="sign">— Elise, Co-Founder &amp; Chief Christmas Lover 🐻</div>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SERVICES ======================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="center">
+      <span class="pill">Our packages</span>
+      <h2>Pick your sparkle, we handle the rest</h2>
+      <p style="font-weight:800;color:var(--evergreen)">🐻❄️ Every package includes design, professional install, take-down, <u>and free off-season storage</u>.</p>
+      <p style="color:#6b7796;margin-top:6px">Mix and match. Add anything to any package, just ask.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ico">🍪</div>
+        <h3>The Sugar Cookie</h3>
+        <p class="pkg-tag">Sweet &amp; simple starter</p>
+        <p>Classic warm-white lights along your main roofline. The perfect first taste of a professionally lit home.</p>
+        <p class="incl">✓ Design · Install · Take-down · Free storage</p>
+      </div>
+      <div class="card star">
+        <div class="ico">🦌</div>
+        <h3>The Rudolph</h3>
+        <p class="pkg-tag">Our crowd-pleaser</p>
+        <p>Your roofline <b>plus</b> garage outlines and a glowing walkway. The full curb-appeal look that leads the whole street.</p>
+        <p class="incl">✓ Design · Install · Take-down · Free storage</p>
+      </div>
+      <div class="card">
+        <div class="ico">✨</div>
+        <h3>The Griswold</h3>
+        <p class="pkg-tag">The whole-house showstopper</p>
+        <p>Go all out. Roofline, garage outlines, walkways, columns, and flower-bed borders. The home everyone slows down to see.</p>
+        <p class="incl">✓ Design · Install · Take-down · Free storage</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= WHAT'S INCLUDED (turnkey) ======================= -->
+<section style="background:#fbf4f7">
+  <div class="wrap">
+    <div class="center">
+      <span class="pill">Turnkey &amp; all-inclusive</span>
+      <h2>Complete Christmas lighting. One price, no surprises.</h2>
+      <p style="color:#54607e">Every home is measured and <b>custom-fit</b>. No cookie-cutter kits. We handle it all,
+      start to sparkle: reliable, professional, and fully insured.</p>
+    </div>
+    <div class="included">
+      <div class="inc"><span class="ck">✓</span><span class="txt"><b>Custom design</b><small>Measured and fit to your home</small></span></div>
+      <div class="inc"><span class="ck">✓</span><span class="txt"><b>Lights provided</b><small>We supply the commercial-grade LEDs, nothing for you to buy</small></span></div>
+      <div class="inc"><span class="ck">✓</span><span class="txt"><b>Professional installation</b><small>Hung safely by our insured crew</small></span></div>
+      <div class="inc"><span class="ck">✓</span><span class="txt"><b>In-season service</b><small>A bulb goes out, we come fix it</small></span></div>
+      <div class="inc"><span class="ck">✓</span><span class="txt"><b>Takedown</b><small>We remove everything after the holidays</small></span></div>
+      <div class="inc"><span class="ck">✓</span><span class="txt"><b>Free storage</b><small>We keep your lights safe until next season</small></span></div>
+    </div>
+    <p style="text-align:center;margin-top:24px;font-weight:800;color:var(--evergreen)">
+      No hidden fees. Want to go bigger? Optional add-ons available, just ask. 🎄</p>
+  </div>
+</section>
+
+<!-- ======================= HOW IT WORKS ======================= -->
+<section style="background:#fbfaf6">
+  <div class="wrap">
+    <div class="center">
+      <span class="pill">Easy as 1-2-3</span>
+      <h2>How the magic happens</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Tell us your dream</h3><p>Fill out the quick form or give us a call. A real person will reach out to talk through your ideas.</p></div>
+      <div class="step"><h3>We design &amp; install</h3><p>We handle the ladders, the lights, and the cords. You just pick the vibe: classic warm white or colorful &amp; fun.</p></div>
+      <div class="step"><h3>You relax all season</h3><p>Enjoy the glow. After the holidays we take it all down and store it. Next year, one text and you're lit again.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= GALLERY / COMPLETED WORK =======================
+     HIDDEN until you have real customer photos. To turn it back on:
+       1) delete this opening comment line and the closing comment line below
+       2) replace each .ph tile with <img src="photo.jpg" alt="Christmas light installation in Burleson, TX">
+       3) re-add the nav link:  <a class="link" href="#gallery">Our Work</a>
+
+<section id="gallery" style="background:#fbfaf6">
+  <div class="wrap">
+    <div class="center">
+      <span class="pill">Our work</span>
+      <h2>Homes we've made merry</h2>
+      <p style="color:#8a94ad;font-size:.9rem">Swap these tiles for real photos of your completed installs.</p>
+    </div>
+    <div class="gallery">
+      <div class="ph">PHOTO<br>Warm-white roofline<br>Burleson, TX</div>
+      <div class="ph">PHOTO<br>Wrapped trees<br>Cleburne, TX</div>
+      <div class="ph">PHOTO<br>Full-house display<br>Mansfield, TX</div>
+      <div class="ph">PHOTO<br>Walkway &amp; columns<br>Weatherford, TX</div>
+      <div class="ph">PHOTO<br>Colorful &amp; fun<br>Fort Worth, TX</div>
+      <div class="ph">PHOTO<br>Rooftop &amp; bushes<br>Aledo, TX</div>
+    </div>
+    <p style="text-align:center;margin-top:24px">
+      <a class="btn btn-gold" href="#top">🎄 Get My Free Quote</a>
+    </p>
+  </div>
+</section>
+============================================================================ -->
+
+<!-- ======================= SERVICE AREAS (Local SEO) ======================= -->
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="center">
+      <span class="pill">Neighbors we serve</span>
+      <h2>Christmas light installation across North Texas</h2>
+      <p style="color:#cdd7ff">Searching for <b>Christmas lights near you</b>? We design, hang, take down &amp; store Christmas lights in <b>Burleson</b> and all of <b>Johnson County</b>, plus <b>Tarrant County</b> and <b>Parker County</b>, including Cleburne, Fort Worth, Mansfield, Crowley, Joshua, Weatherford &amp; Aledo.</p>
+    </div>
+    <div class="area-cols">
+      <div class="area-col">
+        <h3>Johnson County</h3>
+        <p>Christmas light installation in Burleson, Cleburne, Joshua, Keene &amp; Godley.</p>
+      </div>
+      <div class="area-col">
+        <h3>Tarrant County</h3>
+        <p>Christmas light installation in Fort Worth, Benbrook, Mansfield, Arlington &amp; Crowley.</p>
+      </div>
+      <div class="area-col">
+        <h3>Parker County</h3>
+        <p>Christmas light installation in Weatherford, Aledo &amp; Springtown.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= REVIEWS — HIDDEN until we have real reviews =======================
+     To turn back on: delete this opening comment line and the closing comment line below,
+     then swap the placeholder quotes for real customer reviews.
+
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="pill">Happy homes</span>
+      <h2>What our families are saying</h2>
+      <p style="color:#8a94ad;font-size:.85rem">(Placeholder reviews — replace with real ones as you earn them.)</p>
+    </div>
+    <div class="reviews">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>“It looked like something out of a Hallmark movie and I didn't have to lift a finger. The storage option is genius!”</p>
+        <div class="who"><div class="avatar">J</div><b>Jane P. — Burleson</b></div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>“They texted me back so fast. Booked, installed, and my kids were speechless. Worth every penny.”</p>
+        <div class="who"><div class="avatar">M</div><b>Maria G. — Mansfield</b></div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>“No more tangled lights in my garage. This is the only way I'll decorate from now on.”</p>
+        <div class="who"><div class="avatar">S</div><b>Sarah L. — Weatherford</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+============================================================================ -->
+
+<!-- ======================= FAQ (great for SEO) ======================= -->
+<section class="faq" style="background:#fbf4f7">
+  <div class="wrap" style="max-width:820px">
+    <div class="center">
+      <span class="pill">Good to know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <details open><summary>Do I need to buy my own lights?</summary><p>Nope! Beautiful commercial-grade lights are included with every package. We design, provide, and hang them all for you.</p></details>
+    <details><summary>What areas do you serve?</summary><p>We serve Burleson and the surrounding Johnson, Tarrant, and Parker counties, including Fort Worth, Mansfield, Cleburne, Weatherford, Aledo, and more.</p></details>
+    <details><summary>Do you take the lights down too?</summary><p>Yes, and it's included in <b>every</b> package. After the holidays we take everything down and store your lights until next season, at no extra charge.</p></details>
+    <details><summary>Are there any hidden fees?</summary><p>None. Your quote covers it all: custom design, commercial-grade LED lights, professional install, in-season service, takedown, and storage. If you'd ever like to add on extras, we'll always talk it through with you first.</p></details>
+    <details><summary>When should I book?</summary><p>Early! Our calendar fills up fast in the fall. Reach out any time and we'll get you on the schedule.</p></details>
+    <details><summary>How much does it cost?</summary><p>Every home is different, so we give free, no-pressure quotes. Fill out the form or call and we'll put together an estimate for you.</p></details>
+  </div>
+</section>
+
+<!-- ======================= FINAL CTA ======================= -->
+<section class="finalcta">
+  <div class="wrap">
+    <h2>Let's make your home the one everyone slows down to see. ✨</h2>
+    <p style="color:#dbe3ff;max-width:48ch;margin:0 auto 24px">Free quote, friendly service, zero ladders. Serving Johnson, Tarrant &amp; Parker Counties.</p>
+    <a class="btn btn-gold" href="#top">🎄 Get My Free Quote</a>
+    <p style="margin-top:24px">or call/text us now:</p>
+    <a class="big-call" href="tel:+18172561666">(817) 256-1666</a>
+  </div>
+</section>
+
+<!-- ======================= FOOTER (NAP for local SEO) ======================= -->
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <h4>🐻❄️ Polar Bear Lights</h4>
+      <p>The magic of Christmas, without the ladder. Family-run and proudly serving North Texas.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>📞 <a href="tel:+18172561666">(817) 256-1666</a><br>
+         ✉️ <a href="mailto:hello@polarbearlights.com">hello@polarbearlights.com</a><br>
+         📍 Burleson, TX 76028</p>
+    </div>
+    <div>
+      <h4>Service Area</h4>
+      <p>Johnson County · Tarrant County · Parker County · Burleson · Fort Worth · Mansfield · Weatherford</p>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:24px;border-top:1px solid #1b2748;padding-top:16px;font-size:.8rem">
+    © <span id="yr"></span> Polar Bear Lights · Burleson, TX
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* ============================================================
+     LEAD FORM → GOOGLE SHEET + EMAIL
+     Paste your Google Apps Script Web App URL below (from the
+     "Deploy" step). Until then, the form runs in "demo mode"
+     and just shows the thank-you message.
+     Full setup steps are in GOOGLE-SHEET-SETUP.md
+     ============================================================ */
+  var GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwLAxvBZZ7FcnA72Pq5f1BN6O0oJnl5KWfHnIrLBYiYJgjDZtMnljTw5hHnDjtEFAB3HQ/exec";   // e.g. "https://script.google.com/macros/s/AKfy..../exec"
+
+  function showThanks(f){
+    f.innerHTML = '<div style="text-align:center;padding:30px 10px">'
+      + '<div style="font-size:3rem">🎉🐻❄️</div>'
+      + '<h2 style="color:#0d1b3e">Thank you!</h2>'
+      + '<p style="color:#6b7796">We\'ve got your info and a real person will reach out to talk through your lights. '
+      + 'Want to chat sooner? Call or text us at <a href="tel:+18172561666" style="color:#c6415f;font-weight:800">(817) 256-1666</a>.</p></div>';
+  }
+
+  async function submitLead(e){
+    e.preventDefault();
+    var f = e.target;
+    var btn = f.querySelector('button[type=submit]');
+
+    // Anti-spam honeypot: if the hidden field is filled, it's a bot — pretend success, send nothing.
+    if(f.company && f.company.value){ showThanks(f); return false; }
+
+    var data = {
+      name:    f.name.value,
+      phone:   f.phone.value,
+      email:   f.email.value,
+      county:  f.county.value,
+      package: f.service.value,
+      source:  'website'
+    };
+
+    // Demo mode (not yet connected): just say thanks.
+    if(!GOOGLE_SCRIPT_URL){ showThanks(f); return false; }
+
+    if(btn){ btn.disabled = true; btn.textContent = 'Sending…'; }
+    try{
+      // Google Apps Script web apps don't send CORS headers, so we use
+      // mode:'no-cors' + text/plain (a "simple" request, no preflight).
+      // The request goes through; we just can't read the response, so we
+      // optimistically show the thank-you.
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(data)
+      });
+      showThanks(f);
+    }catch(err){
+      // Network failure — don't lose the lead: ask them to call.
+      if(btn){ btn.disabled = false; btn.textContent = '🎁 Get My Free Quote'; }
+      alert("Sorry, something went wrong sending that. Please call or text us at (817) 256-1666 and we'll take care of you!");
+    }
+    return false;
+  }
+</script>
+</body>
+</html>
