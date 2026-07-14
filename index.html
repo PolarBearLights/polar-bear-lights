@@ -331,8 +331,11 @@
         <input id="name" name="name" required placeholder="Jane" autocomplete="given-name">
       </div>
       <div class="field">
-        <label for="phone">Phone (the best way to reach you)</label>
-        <input id="phone" name="phone" type="tel" required placeholder="(817) 555-0000" autocomplete="tel">
+        <label for="phone">Phone (10 digits, area code first)</label>
+        <input id="phone" name="phone" type="tel" required placeholder="(817) 555-0000" autocomplete="tel"
+               inputmode="numeric" maxlength="14"
+               pattern="\(\d{3}\) \d{3}-\d{4}"
+               title="Please enter your 10-digit phone number, like (817) 555-0000">
       </div>
       <div class="field">
         <label for="email">Email</label>
@@ -601,6 +604,18 @@
      ============================================================ */
   var GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwLAxvBZZ7FcnA72Pq5f1BN6O0oJnl5KWfHnIrLBYiYJgjDZtMnljTw5hHnDjtEFAB3HQ/exec";   // e.g. "https://script.google.com/macros/s/AKfy..../exec"
 
+  // Auto-format the phone field as the customer types: 8172561666 -> (817) 256-1666.
+  // Guides them to give us area code + 7 digits without having to think about it.
+  document.getElementById('phone').addEventListener('input', function(){
+    var d = this.value.replace(/\D/g, '');
+    if (d.length === 11 && d.charAt(0) === '1') d = d.slice(1);  // strip a leading 1
+    d = d.slice(0, 10);
+    if (d.length > 6)      this.value = '(' + d.slice(0,3) + ') ' + d.slice(3,6) + '-' + d.slice(6);
+    else if (d.length > 3) this.value = '(' + d.slice(0,3) + ') ' + d.slice(3);
+    else if (d.length > 0) this.value = '(' + d;
+    else                   this.value = '';
+  });
+
   function showThanks(f){
     f.innerHTML = '<div style="text-align:center;padding:30px 10px">'
       + '<div style="font-size:3rem">🎉🐻❄️</div>'
@@ -618,6 +633,7 @@
     if(f.company && f.company.value){ showThanks(f); return false; }
 
     var data = {
+      token:   'pbl_7Hq2Ls9Xk4',
       name:    f.name.value,
       phone:   f.phone.value,
       email:   f.email.value,
