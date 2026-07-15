@@ -66,10 +66,23 @@
     { "@type": "City", "name": "Burleson, TX" }
   ],
   "description": "Professional Christmas light design, installation, take-down and off-season storage serving Burleson, Johnson, Tarrant and Parker counties in the DFW area.",
-  "openingHours": "Mo-Sa 08:00-18:00",
-  "sameAs": [
-    "https://www.facebook.com/PLACEHOLDER",
-    "https://www.instagram.com/PLACEHOLDER"
+  "url": "https://www.polarbearlights.com/",
+  "openingHours": "Mo-Sa 08:00-18:00"
+}
+</script>
+
+<!-- FAQ structured data (helps Google show your Q&As in search results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Do I need to buy my own lights?", "acceptedAnswer": { "@type": "Answer", "text": "No. Commercial-grade LED lights are included with every package. We design, provide, and hang them all for you." } },
+    { "@type": "Question", "name": "What areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve Burleson and the surrounding Johnson, Tarrant, and Parker counties, including Fort Worth, Mansfield, Cleburne, Weatherford, Aledo, and more." } },
+    { "@type": "Question", "name": "Do you take the lights down too?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it is included in every package. After the holidays we take everything down and store your lights until next season, at no extra charge." } },
+    { "@type": "Question", "name": "Are there any hidden fees?", "acceptedAnswer": { "@type": "Answer", "text": "None. Your quote covers custom design, commercial-grade LED lights, professional install, in-season service, takedown, and storage. Optional add-ons are always discussed with you first." } },
+    { "@type": "Question", "name": "When should I book?", "acceptedAnswer": { "@type": "Answer", "text": "Early. Our calendar fills up fast in the fall. Reach out any time and we will get you on the schedule." } },
+    { "@type": "Question", "name": "How much does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "Every home is different, so we give free, no-pressure quotes. Fill out the form or call and we will put together an estimate for you." } }
   ]
 }
 </script>
@@ -146,13 +159,16 @@
     opacity:.7}
   .hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;
     align-items:center;padding:64px 0}
-  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;padding:40px 0}}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;padding:56px 0 44px}}
   .hero h1{font-size:clamp(2rem,5vw,3.2rem)}
   .hero h1 .script{color:var(--gold-soft);display:block;font-size:1.25em}
   .hero p.lede{font-size:1.15rem;color:#dbe3ff;max-width:46ch}
-  .trust{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:18px;
-    font-weight:700;font-size:.9rem;color:#cdd7ff}
-  .trust span{display:flex;align-items:center;gap:6px}
+  .trust{margin-top:20px;font-weight:700;font-size:.96rem;color:#e6edff;
+    display:flex;flex-direction:column;gap:12px}
+  .trust span{display:flex;align-items:center;gap:12px}
+  .bulb{width:12px;height:12px;border-radius:50%;flex:none;
+    background:radial-gradient(circle at 35% 30%, rgba(255,255,255,.85), var(--b) 62%);
+    box-shadow:0 0 10px 1px var(--b)}
 
   /* ---------- Lead form ---------- */
   .lead{background:#fff;color:var(--ink);border-radius:24px;padding:24px;
@@ -310,22 +326,22 @@
 <div class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="pill">✨ Serving Johnson, Tarrant &amp; Parker Counties</span>
+      <span class="pill">Serving Johnson, Tarrant &amp; Parker Counties</span>
       <h1>The magic of Christmas,<span class="script">without the ladder.</span></h1>
-      <p class="lede">We design, hang, take down, <b>and store</b> your Christmas lights, so all you have to do is sip cocoa and watch your home twinkle. 🐻❄️</p>
+      <p class="lede">We design, hang, take down, <b>and store</b> your Christmas lights, so all you have to do is sip cocoa and watch your home twinkle.</p>
       <div class="trust">
-        <span>✅ Fully insured &amp; professional</span>
-        <span>✅ Commercial-grade LED lights included</span>
-        <span>✅ Takedown &amp; free storage included</span>
-        <span>✅ No hidden fees</span>
+        <span><i class="bulb" style="--b:#ffd45e"></i>Fully insured</span>
+        <span><i class="bulb" style="--b:#ff8098"></i>LED lights included</span>
+        <span><i class="bulb" style="--b:#8fe3b4"></i>Takedown &amp; storage</span>
+        <span><i class="bulb" style="--b:#8ec7ef"></i>No hidden fees</span>
       </div>
     </div>
 
     <!-- LEAD-TO-SPEED FORM: short, phone-first, one screen -->
     <form class="lead" id="quoteForm" onsubmit="return submitLead(event)">
-      <span class="speed">⚡ A real person will reach out</span>
+      <span class="speed">We'll reach out within 24 hours</span>
       <h2>Get your free lighting quote</h2>
-      <p class="sub">Takes 30 seconds. No ladders required. 🎄</p>
+      <p class="sub">Takes 30 seconds. No ladders required.</p>
       <div class="field">
         <label for="name">First name</label>
         <input id="name" name="name" required placeholder="Jane" autocomplete="given-name">
@@ -354,7 +370,7 @@
       <div class="field">
         <label for="service">Which package are you eyeing?</label>
         <select id="service" name="service">
-          <option>Not sure yet, help me pick! 🎄</option>
+          <option>Not sure yet, help me pick!</option>
           <option>🍪 The Sugar Cookie (starter)</option>
           <option>🦌 The Rudolph (most popular)</option>
           <option>✨ The Griswold (deluxe)</option>
@@ -365,7 +381,7 @@
         <label for="company">Company (leave this blank)</label>
         <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
       </div>
-      <button class="btn" type="submit">🎁 Get My Free Quote</button>
+      <button class="btn" type="submit">Get My Free Quote</button>
       <p class="fine">By submitting you agree to be contacted about your quote. No spam, ever.</p>
     </form>
   </div>
@@ -378,8 +394,8 @@
       <span class="pill">Our Story</span>
       <h2 class="script" style="font-size:2.2rem;color:var(--berry)">Why we do this</h2>
       <blockquote>
-        “Ever since I was a little girl, nothing has felt more like <em>home</em> than a street glowing with Christmas lights. When my own family got too busy to decorate the way I dreamed of, I realized so many other moms felt the same, they wanted the magic, just not the ladder, the tangled cords, or the January take-down. So we started Polar Bear Lights to hand that magic back to families like yours. We hang it, we take it down, and we even keep your lights cozy in storage till next year. All you have to do is watch your kids' faces light up.”
-        <div class="sign">— Elise, Co-Founder &amp; Chief Christmas Lover 🐻</div>
+        “Now that my husband and I have welcomed our first daughter, we can't wait to pass on the Christmas traditions we grew up loving, like driving around to admire the lights and making memories together as a family. That love for the season is exactly why we started Polar Bear Lights. We believe Christmas is for making memories, not climbing ladders, untangling lights, or dreading the takedown in January. Our job is to handle your Christmas light installation from start to finish, so you can spend the season enjoying what matters most: the people you love.”
+        <div class="sign">— Elise, Co-Founder &amp; Chief Christmas Lover</div>
       </blockquote>
     </div>
   </div>
@@ -391,7 +407,7 @@
     <div class="center">
       <span class="pill">Our packages</span>
       <h2>Pick your sparkle, we handle the rest</h2>
-      <p style="font-weight:800;color:var(--evergreen)">🐻❄️ Every package includes design, professional install, take-down, <u>and free off-season storage</u>.</p>
+      <p style="font-weight:800;color:var(--evergreen)">Every package includes design, professional install, take-down, <u>and free off-season storage</u>.</p>
       <p style="color:#6b7796;margin-top:6px">Mix and match. Add anything to any package, just ask.</p>
     </div>
     <div class="cards">
@@ -406,7 +422,7 @@
         <div class="ico">🦌</div>
         <h3>The Rudolph</h3>
         <p class="pkg-tag">Our crowd-pleaser</p>
-        <p>Your roofline <b>plus</b> garage outlines and a glowing walkway. The full curb-appeal look that leads the whole street.</p>
+        <p>Your roofline <b>plus</b> garage outlines and a glowing walkway. So merry and bright, Santa's sleigh will have no trouble finding you.</p>
         <p class="incl">✓ Design · Install · Take-down · Free storage</p>
       </div>
       <div class="card">
@@ -438,7 +454,7 @@
       <div class="inc"><span class="ck">✓</span><span class="txt"><b>Free storage</b><small>We keep your lights safe until next season</small></span></div>
     </div>
     <p style="text-align:center;margin-top:24px;font-weight:800;color:var(--evergreen)">
-      No hidden fees. Want to go bigger? Optional add-ons available, just ask. 🎄</p>
+      No hidden fees. Want to go bigger? Optional add-ons available, just ask.</p>
   </div>
 </section>
 
@@ -450,7 +466,7 @@
       <h2>How the magic happens</h2>
     </div>
     <div class="steps">
-      <div class="step"><h3>Tell us your dream</h3><p>Fill out the quick form or give us a call. A real person will reach out to talk through your ideas.</p></div>
+      <div class="step"><h3>Tell us your dream</h3><p>Fill out the quick form or give us a call, and we'll get in touch to talk through your ideas.</p></div>
       <div class="step"><h3>We design &amp; install</h3><p>We handle the ladders, the lights, and the cords. You just pick the vibe: classic warm white or colorful &amp; fun.</p></div>
       <div class="step"><h3>You relax all season</h3><p>Enjoy the glow. After the holidays we take it all down and store it. Next year, one text and you're lit again.</p></div>
     </div>
@@ -479,7 +495,7 @@
       <div class="ph">PHOTO<br>Rooftop &amp; bushes<br>Aledo, TX</div>
     </div>
     <p style="text-align:center;margin-top:24px">
-      <a class="btn btn-gold" href="#top">🎄 Get My Free Quote</a>
+      <a class="btn btn-gold" href="#top">Get My Free Quote</a>
     </p>
   </div>
 </section>
@@ -489,7 +505,7 @@
 <section class="areas" id="areas">
   <div class="wrap">
     <div class="center">
-      <span class="pill">Neighbors we serve</span>
+      <span class="pill">Neighborhoods we serve</span>
       <h2>Christmas light installation across North Texas</h2>
       <p style="color:#cdd7ff">Searching for <b>Christmas lights near you</b>? We design, hang, take down &amp; store Christmas lights in <b>Burleson</b> and all of <b>Johnson County</b>, plus <b>Tarrant County</b> and <b>Parker County</b>, including Cleburne, Fort Worth, Mansfield, Crowley, Joshua, Weatherford &amp; Aledo.</p>
     </div>
@@ -563,7 +579,7 @@
   <div class="wrap">
     <h2>Let's make your home the one everyone slows down to see. ✨</h2>
     <p style="color:#dbe3ff;max-width:48ch;margin:0 auto 24px">Free quote, friendly service, zero ladders. Serving Johnson, Tarrant &amp; Parker Counties.</p>
-    <a class="btn btn-gold" href="#top">🎄 Get My Free Quote</a>
+    <a class="btn btn-gold" href="#top">Get My Free Quote</a>
     <p style="margin-top:24px">or call/text us now:</p>
     <a class="big-call" href="tel:+18172561666">(817) 256-1666</a>
   </div>
@@ -573,7 +589,7 @@
 <footer>
   <div class="wrap foot-grid">
     <div>
-      <h4>🐻❄️ Polar Bear Lights</h4>
+      <h4>Polar Bear Lights</h4>
       <p>The magic of Christmas, without the ladder. Family-run and proudly serving North Texas.</p>
     </div>
     <div>
@@ -602,7 +618,7 @@
      and just shows the thank-you message.
      Full setup steps are in GOOGLE-SHEET-SETUP.md
      ============================================================ */
-  var GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwLAxvBZZ7FcnA72Pq5f1BN6O0oJnl5KWfHnIrLBYiYJgjDZtMnljTw5hHnDjtEFAB3HQ/exec";   // e.g. "https://script.google.com/macros/s/AKfy..../exec"
+  var GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw91xKKfylPc-8f2LhjEJ53YJcxrQHfs3ltak2QgZ4OXLadzg5aUnPKPBlajb0pgLFGMw/exec";   // e.g. "https://script.google.com/macros/s/AKfy..../exec"
 
   // Auto-format the phone field as the customer types: 8172561666 -> (817) 256-1666.
   // Guides them to give us area code + 7 digits without having to think about it.
@@ -617,8 +633,7 @@
   });
 
   function showThanks(f){
-    f.innerHTML = '<div style="text-align:center;padding:30px 10px">'
-      + '<div style="font-size:3rem">🎉🐻❄️</div>'
+    f.innerHTML = '<div style="text-align:center;padding:36px 10px">'
       + '<h2 style="color:#0d1b3e">Thank you!</h2>'
       + '<p style="color:#6b7796">We\'ve got your info and a real person will reach out to talk through your lights. '
       + 'Want to chat sooner? Call or text us at <a href="tel:+18172561666" style="color:#c6415f;font-weight:800">(817) 256-1666</a>.</p></div>';
@@ -660,7 +675,7 @@
       showThanks(f);
     }catch(err){
       // Network failure — don't lose the lead: ask them to call.
-      if(btn){ btn.disabled = false; btn.textContent = '🎁 Get My Free Quote'; }
+      if(btn){ btn.disabled = false; btn.textContent = 'Get My Free Quote'; }
       alert("Sorry, something went wrong sending that. Please call or text us at (817) 256-1666 and we'll take care of you!");
     }
     return false;
