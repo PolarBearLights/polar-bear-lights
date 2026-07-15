@@ -137,7 +137,7 @@
   /* ---------- Header ---------- */
   header{position:sticky;top:0;z-index:50;background:rgba(253,253,255,.92);
     backdrop-filter:blur(8px);border-bottom:1px solid #eef1f8}
-  .bar{display:flex;align-items:center;gap:16px;padding:10px 0}
+  .bar{display:flex;align-items:center;gap:16px;padding:10px 22px}
   .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
   .logo b{font-size:1.05rem;color:var(--midnight)}
   .logo small{display:block;color:var(--berry);font-weight:800;font-size:.72rem;letter-spacing:.04em}
@@ -158,8 +158,8 @@
       radial-gradient(1.5px 1.5px at 65% 75%, #fff, transparent);
     opacity:.7}
   .hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;
-    align-items:center;padding:64px 0}
-  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;padding:56px 0 44px}}
+    align-items:center;padding:64px 20px}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;padding:52px 22px 48px;gap:28px}}
   .hero h1{font-size:clamp(2rem,5vw,3.2rem)}
   .hero h1 .script{color:var(--gold-soft);display:block;font-size:1.25em}
   .hero p.lede{font-size:1.15rem;color:#dbe3ff;max-width:46ch}
