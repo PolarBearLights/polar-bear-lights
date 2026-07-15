@@ -160,7 +160,6 @@
       font-weight:800;text-decoration:none;font-size:1rem}
     .mobile-cta .mc-call{background:var(--evergreen);color:#fff}
     .mobile-cta .mc-quote{background:var(--gold);color:var(--midnight)}
-    body{padding-bottom:76px}
   }
 
   /* ---------- Hero ---------- */
@@ -289,6 +288,8 @@
   @media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
   footer a{color:#cfd8f3;text-decoration:none}
   footer h4{color:#fff;margin:0 0 10px}
+  /* Extra bottom room on mobile so the sticky booking bar never covers the footer */
+  @media(max-width:760px){footer{padding-bottom:104px}}
 </style>
 </head>
 <body>
@@ -334,7 +335,7 @@
       <a class="link" href="#areas">Service Area</a>
       <a class="link" href="#story">Our Story</a>
       <a class="call" href="tel:+18172561666">📞 (817) 256-1666</a>
-      <a class="quote-btn" href="#top">Free Quote</a>
+      <a class="quote-btn" href="#quoteForm">Free Quote</a>
     </nav>
   </div>
 </header>
@@ -352,6 +353,7 @@
         <span><i class="bulb" style="--b:#ff8098"></i>LED lights included</span>
         <span><i class="bulb" style="--b:#8fe3b4"></i>Takedown &amp; storage</span>
         <span><i class="bulb" style="--b:#8ec7ef"></i>No hidden fees</span>
+        <span><i class="bulb" style="--b:#ffd45e"></i>Local &amp; family-run</span>
       </div>
     </div>
 
@@ -513,7 +515,7 @@
       <div class="ph">PHOTO<br>Rooftop &amp; bushes<br>Aledo, TX</div>
     </div>
     <p style="text-align:center;margin-top:24px">
-      <a class="btn btn-gold" href="#top">Get My Free Quote</a>
+      <a class="btn btn-gold" href="#quoteForm">Get My Free Quote</a>
     </p>
   </div>
 </section>
@@ -597,7 +599,7 @@
   <div class="wrap">
     <h2>Let's make your home the one everyone slows down to see. ✨</h2>
     <p style="color:#dbe3ff;max-width:48ch;margin:0 auto 24px">Free quote, friendly service, zero ladders. Serving Johnson, Tarrant &amp; Parker Counties.</p>
-    <a class="btn btn-gold" href="#top">Get My Free Quote</a>
+    <a class="btn btn-gold" href="#quoteForm">Get My Free Quote</a>
     <p style="margin-top:24px">or call/text us now:</p>
     <a class="big-call" href="tel:+18172561666">(817) 256-1666</a>
   </div>
@@ -629,7 +631,7 @@
 <!-- Mobile sticky booking bar: keeps Call + Quote on screen so no one has to scroll up -->
 <div class="mobile-cta">
   <a class="mc-call" href="tel:+18172561666">Call us</a>
-  <a class="mc-quote" href="#top">Get a Free Quote</a>
+  <a class="mc-quote" href="#quoteForm">Get a Free Quote</a>
 </div>
 
 <script>
@@ -659,8 +661,12 @@
   function showThanks(f){
     f.innerHTML = '<div style="text-align:center;padding:36px 10px">'
       + '<h2 style="color:#0d1b3e">Thank you!</h2>'
-      + '<p style="color:#6b7796">We\'ve got your info and a real person will reach out to talk through your lights. '
+      + '<p style="color:#6b7796">We\'ve got your info and we\'ll reach out within 24 hours to talk through your lights. '
       + 'Want to chat sooner? Call or text us at <a href="tel:+18172561666" style="color:#c6415f;font-weight:800">(817) 256-1666</a>.</p></div>';
+    // Center the confirmation on screen (important on mobile). The hero has overflow:hidden,
+    // which blocks scrollIntoView, so we scroll the whole page directly instead.
+    var y = f.getBoundingClientRect().top + window.scrollY - (window.innerHeight / 2) + (f.offsetHeight / 2);
+    window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
   }
 
   async function submitLead(e){
