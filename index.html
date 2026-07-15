@@ -48,6 +48,7 @@
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
   "name": "Polar Bear Lights",
+  "legalName": "Polar Bear Lights LLC",
   "image": "https://www.polarbearlights.com/placeholder-logo.png",
   "telephone": "+1-817-256-1666",
   "email": "hello@polarbearlights.com",
@@ -144,7 +145,23 @@
   .nav{margin-left:auto;display:flex;align-items:center;gap:20px}
   .nav a{text-decoration:none;font-weight:700;font-size:.95rem}
   .nav .call{background:var(--evergreen);color:#fff;padding:10px 16px;border-radius:999px}
+  .nav .quote-btn{background:var(--gold);color:var(--midnight);padding:10px 16px;
+    border-radius:999px;font-weight:800}
   @media(max-width:760px){.nav a.link{display:none}}
+  @media(max-width:760px){.nav .quote-btn{display:none}}
+
+  /* Mobile sticky booking bar: always-visible Call + Quote on phones */
+  .mobile-cta{display:none}
+  @media(max-width:760px){
+    .mobile-cta{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;
+      padding:10px 14px;background:rgba(13,27,62,.96);backdrop-filter:blur(8px);
+      border-top:1px solid rgba(255,255,255,.14)}
+    .mobile-cta a{flex:1;text-align:center;padding:14px;border-radius:12px;
+      font-weight:800;text-decoration:none;font-size:1rem}
+    .mobile-cta .mc-call{background:var(--evergreen);color:#fff}
+    .mobile-cta .mc-quote{background:var(--gold);color:var(--midnight)}
+    body{padding-bottom:76px}
+  }
 
   /* ---------- Hero ---------- */
   .hero{position:relative;overflow:hidden;color:#fff;
@@ -172,7 +189,7 @@
 
   /* ---------- Lead form ---------- */
   .lead{background:#fff;color:var(--ink);border-radius:24px;padding:24px;
-    box-shadow:0 20px 50px rgba(0,0,0,.35)}
+    box-shadow:0 20px 50px rgba(0,0,0,.35);scroll-margin-top:90px}
   .lead h2{font-size:1.35rem}
   .lead .sub{color:#6b7796;font-size:.92rem;margin-top:-4px}
   .field{margin-top:12px}
@@ -317,6 +334,7 @@
       <a class="link" href="#areas">Service Area</a>
       <a class="link" href="#story">Our Story</a>
       <a class="call" href="tel:+18172561666">📞 (817) 256-1666</a>
+      <a class="quote-btn" href="#top">Free Quote</a>
     </nav>
   </div>
 </header>
@@ -604,9 +622,15 @@
     </div>
   </div>
   <div class="wrap" style="margin-top:24px;border-top:1px solid #1b2748;padding-top:16px;font-size:.8rem">
-    © <span id="yr"></span> Polar Bear Lights · Burleson, TX
+    © <span id="yr"></span> Polar Bear Lights LLC · Burleson, TX
   </div>
 </footer>
+
+<!-- Mobile sticky booking bar: keeps Call + Quote on screen so no one has to scroll up -->
+<div class="mobile-cta">
+  <a class="mc-call" href="tel:+18172561666">Call us</a>
+  <a class="mc-quote" href="#top">Get a Free Quote</a>
+</div>
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
